@@ -6,7 +6,7 @@
 
 	<groupId>sparkjava-hello-world</groupId>
 	<artifactId>sparkjava-hello-world</artifactId>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -58,13 +58,15 @@
 		</plugins>
 	</build>
  <distributionManagement>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <url>http://192.168.1.71:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
     <repository>
-      <id>maven-releases</id>
-      <url>http://192.168.1.71:8081/repository/maven-releases/</url>
+      <id>deployment</id>
+      <name>Internal Releases</name>
+      <url>http://192.168.1.71:8081/repository/jenkins_war_rel/</url>
     </repository>
+    <snapshotRepository>
+      <id>deployment</id>
+      <name>Internal Snapshot Releases</name>
+      <url>http://192.168.1.71:8081/repository/jenkins_war_snap/</url>
+    </snapshotRepository>
   </distributionManagement>
 </project>
