@@ -61,12 +61,12 @@
     <repository>
       <id>deployment</id>
       <name>Internal Releases</name>
-      <url>http://192.168.1.71:8081/repository/jenkins_war_rel/</url>
+      <url>http://192.168.1.73:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
       <id>deployment</id>
       <name>Internal Snapshot Releases</name>
-      <url>http://192.168.1.71:8081/repository/jenkins_war_snap/</url>
+      <url>http://192.168.1.73:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
